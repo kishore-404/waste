@@ -247,15 +247,7 @@ export default function Welcome() {
             </div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button 
-                type="button" onClick={() => navigate('/team')}
-                className="group relative px-8 py-4 bg-emerald-500 text-neutral-950 font-bold uppercase tracking-widest rounded-lg overflow-hidden transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] cursor-pointer"
-              >
-                <div className="absolute inset-0 w-0 bg-white transition-all duration-300 ease-out group-hover:w-full z-0" />
-                <span className="relative z-10 flex items-center justify-center gap-2 pointer-events-none">
-                  Enter Dashboard <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </button>
+             
               <button 
                 type="button" onClick={() => navigate('/about')}
                 className="group px-8 py-4 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest rounded-lg transition-all hover:bg-white/5 cursor-pointer"
